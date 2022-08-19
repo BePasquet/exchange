@@ -1,0 +1,1 @@
+export const DEFAULT_ORDER_BOOK_LIMIT = 20;

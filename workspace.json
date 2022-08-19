@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "order-book": "apps/order-book",
+    "order-matching-engine": "libs/order-matching-engine",
+    "orders-api": "apps/orders-api",
+    "orders-api-interfaces": "libs/orders-api-interfaces"
+  }
+}
