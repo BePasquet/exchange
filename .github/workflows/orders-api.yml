@@ -15,5 +15,5 @@ jobs:
           node-version: 16.17.0
       - run: npm install
       - run: npm test orders-api
-      - run: npm test orders-matching-engine
+      - run: npm test order-matching-engine
       - run: npm run build orders-api --production
