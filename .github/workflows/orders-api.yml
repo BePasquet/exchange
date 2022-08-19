@@ -1,0 +1,19 @@
+name: Orders Api Deployment
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16.17.0
+      - run: npm install
+      - run: npm test orders-api
+      - run: npm test orders-matching-engine
+      - run: npm run build orders-api --production
